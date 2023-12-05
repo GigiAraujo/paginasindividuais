@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "milku" ;
+    src: url(milku/Milku.otf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(96, 69, 122); /* Cor de fundo do bloco de notas */
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+}
+
+.nota {
+    background-color: #f5f2eb; /* Cor da caixa da nota */
+    border: 2px solid #dcdcdc;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    border-radius: 15px;
+}
+
+.nota p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    background-color:cadetblue; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+input[type="color"] {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: #005c99; /* Cor do botão no hover */
+}
+
+button, textarea, input[type="color"] {
+    margin: 5px 0;
+}
+
+#nova-nota {
+    width: 350px;
+    border-radius: 15px;
+    text-size-adjust: none;
+}
+
+#notas-salvas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .nota {
+        max-width: 90%;
+    }
+}
+
+.botoes{
+    margin-top: 15px;
+}
+
+#adicionar-nota{
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: purple;
+}
+
+#limpar-notas{
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: purple;
+}
+
+.botao-editar {
+    background-color: cadetblue; /* Cor de fundo do botão "Editar" */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px; /* Adicione margem à direita para criar espaço entre os botões */
+    border-radius: 10px;
+}
+
+.botao-excluir {
+    background-color: cadetblue; /* Cor de fundo do botão "Excluir" */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 30px;
+    font-family: 'milku';
+}
+
